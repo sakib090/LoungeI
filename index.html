@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lounge India Chelmsford - Authentic Indian Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-spices"></div>
+
+    <!-- Floating Menu Button -->
+    <button class="menu-toggle" id="menuToggle">
+        <span></span>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img class="logo" src="images\Lounge-India-Logo.png" alt="Lounge India Logo">
+            <h1>Lounge India</h1>
+            <p>Authentic Indian Cuisine • Chelmsford</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l-8 8h6v12h4V10h6z"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2 class="section-title">Our Story</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to Lounge India Chelmsford, where traditional Indian flavors meet contemporary dining elegance. Our passionate chefs bring authentic recipes passed down through generations, using the finest spices and freshest ingredients.</p>
+                
+                <p>From aromatic curries to tandoor specialties, every dish tells a story of India's rich culinary heritage. We create an atmosphere where food becomes an experience, and every meal is a journey through the diverse flavors of the subcontinent.</p>
+                
+                <p>Join us for an unforgettable dining experience that celebrates the art of Indian cuisine in the heart of Chelmsford.</p>
+            </div>
+            <div class="about-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b35'/%3E%3Cstop offset='100%25' style='stop-color:%23ff8c42'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23bg)'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EAuthentic Indian Cuisine%3C/text%3E%3C/svg%3E" alt="Indian Cuisine">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu-preview">
+        <h2 class="section-title" style="color: white;">Featured Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Butter Chicken</h3>
+                <p>Tender chicken in a rich, creamy tomato-based sauce with aromatic spices. A classic that never disappoints, served with basmati rice.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Lamb Biryani</h3>
+                <p>Fragrant basmati rice layered with succulent lamb, saffron, and traditional spices. Slow-cooked to perfection in our authentic style.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Tandoori Mixed Grill</h3>
+                <p>A sizzling platter of chicken tikka, lamb seekh kebabs, and prawns, marinated in yogurt and spices, cooked in our traditional tandoor.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Paneer Makhani</h3>
+                <p>Fresh cottage cheese in a velvety tomato and cashew sauce, perfect for vegetarians seeking rich, authentic flavors.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Fish Curry</h3>
+                <p>Fresh fish simmered in coconut milk with curry leaves, mustard seeds, and traditional South Indian spices.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Garlic Naan</h3>
+                <p>Freshly baked bread infused with garlic and herbs, perfect for complementing any curry dish.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>📍 Location</h3>
+                <p>123 High Street<br>Chelmsford, Essex<br>CM1 1AB</p>
+            </div>
+            <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <p>01245 123456</p>
+            </div>
+            <div class="contact-item">
+                <h3>🕒 Hours</h3>
+                <p>Mon-Thu: 5:00 PM - 11:00 PM<br>
+                Fri-Sat: 5:00 PM - 11:30 PM<br>
+                Sun: 5:00 PM - 10:30 PM</p>
+            </div>
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>info@loungeindia-chelmsford.co.uk</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lounge India Chelmsford. All rights reserved. | Authentic Indian Cuisine</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
