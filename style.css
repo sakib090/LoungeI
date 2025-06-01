@@ -130,6 +130,32 @@ body {
     justify-content: center;
 }
 
+/* Reservation Button - Fixed to top-right */
+.reservation-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #ff6b35, #ff8c42);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(255,107,53,0.3);
+    border: 2px solid transparent;
+}
+
+.reservation-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(255,107,53,0.5);
+    border-color: rgba(255,255,255,0.3);
+}
+
 .menu-toggle:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 30px rgba(255,107,53,0.5);
@@ -182,8 +208,8 @@ body {
 .sidebar {
     position: fixed;
     top: 0;
-    left: -250px;
-    width: 250px;
+    left: -200px;
+    width: 200px;
     height: 100vh;
     background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(20px);
@@ -200,7 +226,7 @@ body {
 }
 
 .sidebar.active ~ .menu-toggle {
-    left: 125px;
+    left: 70px;
 }
 
 .sidebar-overlay {
@@ -461,7 +487,13 @@ footer {
     .hero p { font-size: 1.2rem; }
     .about-content { grid-template-columns: 1fr; }
     .section { padding: 60px 1rem; }
-    .sidebar { width: 230px; left: -230px; }
+    .sidebar { width: 180px; left: -180px; }
     .menu-toggle { top: 20px; left: 20px; width: 50px; height: 50px; }
-    .sidebar.active ~ .menu-toggle { left: 115px; }
+    .sidebar.active ~ .menu-toggle { left: 65px; }
+    .reservation-btn { 
+        top: 20px; 
+        right: 20px; 
+        padding: 12px 20px; 
+        font-size: 0.8rem; 
+    }
 }
