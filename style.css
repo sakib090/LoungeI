@@ -142,12 +142,14 @@ body {
     background: white;
     transition: all 0.3s ease;
     position: relative;
+    margin: 0;
 }
 
 .menu-toggle span::before,
 .menu-toggle span::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 25px;
     height: 3px;
     background: white;
@@ -159,7 +161,7 @@ body {
 }
 
 .menu-toggle span::after {
-    bottom: -8px;
+    top: 8px;
 }
 
 .menu-toggle.active span {
@@ -173,15 +175,15 @@ body {
 
 .menu-toggle.active span::after {
     transform: rotate(-45deg);
-    bottom: 0;
+    top: 0;
 }
 
-/* Sidebar - Moved to left side */
+/* Sidebar - Made narrower and repositioned button */
 .sidebar {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -250px;
+    width: 250px;
     height: 100vh;
     background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(20px);
@@ -195,6 +197,10 @@ body {
 
 .sidebar.active {
     left: 0;
+}
+
+.sidebar.active ~ .menu-toggle {
+    left: 125px;
 }
 
 .sidebar-overlay {
@@ -455,6 +461,7 @@ footer {
     .hero p { font-size: 1.2rem; }
     .about-content { grid-template-columns: 1fr; }
     .section { padding: 60px 1rem; }
-    .sidebar { width: 280px; left: -280px; }
+    .sidebar { width: 230px; left: -230px; }
     .menu-toggle { top: 20px; left: 20px; width: 50px; height: 50px; }
+    .sidebar.active ~ .menu-toggle { left: 115px; }
 }
